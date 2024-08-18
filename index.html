@@ -8,41 +8,47 @@
     <script src="https://kit.fontawesome.com/2f220b054a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Rock <i class="fa fa-hand-rock-o fa-bounce"></i> Paper <i class="fa fa-hand-paper-o fa-flip"></i> Scissor <i class="fa fa-hand-scissors-o fa-shake"></i></h1>
-    <div class="choices">
-        <div class="choice" id="Rock">
-            <img src="./images/rock.jpg">
-        </div>
-        <div class="choice" id="Paper">
-            <img src="./images/paper.jpg">
-        </div>
-        <div class="choice" id="Scissor">
-            <img src="./images/scissors.jpg">
-        </div>
+    <div id="loader-wrapper">
+        <img src="./images/T Xerse Play Studios 3.png" id="logo">
+        <div id="loader"></div>
     </div>
-    <audio id="click-audio" src="./images/mouse-click.mp3"></audio>
-    <audio id="user-win" src="./images/user-win.mp3"></audio>
-    <audio id="comp-win" src="./images/comp-win.mp3"></audio>
-    <h2>Score:</h2>
-    <div class="score-board">
-        <div class="show-choice-user">
-            User
+    <div id="content">
+        <h1>Rock <i class="fa fa-hand-rock-o fa-bounce"></i> Paper <i class="fa fa-hand-paper-o fa-flip"></i> Scissor <i class="fa fa-hand-scissors-o fa-shake"></i></h1>
+        <div class="choices">
+            <div class="choice" id="Rock">
+                <img src="./images/rock.jpg">
+            </div>
+            <div class="choice" id="Paper">
+                <img src="./images/paper.jpg">
+            </div>
+            <div class="choice" id="Scissor">
+                <img src="./images/scissors.jpg">
+            </div>
         </div>
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>You <i class="fa fa-user fa-fade"></i> </p>
+        <audio id="click-audio" src="./images/mouse-click.mp3"></audio>
+        <audio id="user-win" src="./images/user-win.mp3"></audio>
+        <audio id="comp-win" src="./images/comp-win.mp3"></audio>
+        <h2>Score:</h2>
+        <div class="score-board">
+            <div class="show-choice-user">
+                User
+            </div>
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>You <i class="fa fa-user fa-fade"></i> </p>
+            </div>
+            <div class="score">
+                <p id="computer-score">0</p>
+                <p>Com <i class="fa fa-computer fa-fade"></i> </p>
+            </div>
+            <div class="show-choice-computer">
+                Computer
+            </div>
         </div>
-        <div class="score">
-            <p id="computer-score">0</p>
-            <p>Com <i class="fa fa-computer fa-fade"></i> </p>
-        </div>
-        <div class="show-choice-computer">
-            Computer
-        </div>
-    </div>
 
-    <div class="msg-container">
-        <p id="msg">Click choice to play</p>
+        <div class="msg-container">
+            <p id="msg">Click choice to play</p>
+        </div>
     </div>
 
     

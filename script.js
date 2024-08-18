@@ -12,9 +12,12 @@ let audio = document.getElementById("click-audio");
 let userWinAudio = document.getElementById("user-win")
 let compWinAudio = document.getElementById("comp-win")
 
+let genCompChoice;
+//computer choice
 const genComputerChoice = () =>{
     const option = ["Rock", "Paper", "Scissor"];
     const randIdx = Math.floor(Math.random() * 3);//ramdon select number between 0 to 2
+    genCompChoice = option[randIdx];
     return option[randIdx];
     
 }
@@ -22,7 +25,7 @@ const genComputerChoice = () =>{
 // Math.floor(Math.random());
 
 
-
+//play game
 const playGame =(userChoice) =>{
     console.log(userChoice);
     const compChoice = genComputerChoice();
@@ -50,7 +53,7 @@ const playGame =(userChoice) =>{
 
 
 
-
+//show winner
 const showWinner = (userWin) =>{
     if(userWin){
         userWinAudio.play();
@@ -73,13 +76,22 @@ const showWinner = (userWin) =>{
 };
 
 
+//user choice
 choices.forEach((choice) => {
     choice.addEventListener("click", () =>{
         const userChoice = choice.getAttribute("id");
         playGame(userChoice);
-        showComputerChoice.innerHTML = genComputerChoice();
+        showComputerChoice.innerHTML = genCompChoice;
         showUserChoice.innerHTML = userChoice;
         audio.play();
         audio.playbackRate = 2.0;
     });
+});
+
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('loader-wrapper').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }, 2000); // Delay in milliseconds (3000ms = 3 seconds)
 });
