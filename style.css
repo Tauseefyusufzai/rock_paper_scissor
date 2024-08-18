@@ -164,5 +164,11 @@ h2{
         gap: 10px;
         display: grid;
     }
+    #logo{
+        width: 80%;
+    }
+    #loader{
+        width: 40%;
+    }
     
 }
