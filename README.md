@@ -1,7 +1,3 @@
-Here’s a README for your Rock Paper Scissors game on GitHub:
-
----
-
 # Rock Paper Scissors Game
 
 ## Overview
@@ -51,8 +47,5 @@ Contributions are welcome! If you have any ideas or improvements, feel free to f
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-If you have any questions or suggestions, feel free to reach out to me at [your.email@example.com](mailto:your.email@example.com).
+If you have any questions or suggestions, feel free to reach out to me at [tauseefakhtaryusufzai@gmail.com](mailto:tauseefakhtaryusufzai@gmail.com).
 
----
-
-Feel free to customize it further based on your specific implementation!
